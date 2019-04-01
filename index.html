@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-CA" xml:lang="en-CA">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<link href="assets/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+<link href="style.css" type="text/css" rel="stylesheet"/>
+<script type="text/javascript" src="assets/scripts/jquery-3.3.1.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div id="page_wrap" class="container-fluid">
+        <div  class="row" id="logo_nav_wrap">
+            <div class="container_wrap">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="logo_title_container nav-item logo_mobile">
+                                <a class="logo_wrap" href="#">
+                                    <img alt="TD Insurance" src="assets/images/td_logo.png"/>
+                                </a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="col-sm-4 logo_title_container nav-item logo_desktop">
+                                        <a class="logo_wrap" href="#">
+                                            <img alt="TD Insurance" src="assets/images/td_logo.png"/>
+                                        </a>
+                                    </li>
+                                    <li class="col-sm-4 insurance_links nav-item">
+                                        <ul>
+                                            <li><a href="#">Products</a></li>
+                                            <li><a href="#">Claims</a></li>
+                                            <li><a href="#">Contact Us</a></li>
+                                        </ul> 
+                                    </li>
+                                    <li class="col-sm-4 quick_links nav-item">
+                                        <div class="row">
+                                            <div class="province_list col-sm-2">
+                                                <div class="province_sel" onclick="showProvince()">Ontario &nbsp;<i class="fas fa-chevron-down"></i></div>
+                                                <ul class="province_list_items">
+                                                    <li>Ontario</li>
+                                                    <li>British Columbia</li>
+                                                    <li>Manitoba</li>
+                                                    <li>New Brunswick</li>
+                                                </ul>
+                                            </div>
+                                            <div class="language_list col-sm-3">
+                                                <div class="language_sel" onclick="showLanguage()">EN &nbsp;<i class="fas fa-chevron-down"></i></div>
+                                                <ul class="language_list_items">
+                                                    <li>EN</li>
+                                                    <li>FR</li>
+                                                </ul>
+                                            </div>
+                                            <div class="search_box col-sm-2">
+                                                <i class="fas fa-search"></i>
+                                            </div>
+                                            <div class="login col-sm-3">
+                                                <a href="#"><i class="fas fa-lock"></i>&nbsp;&nbsp;login</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_content row pb-5">
+            <div class="container_wrap">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="info_form_wrap col-sm-8">
+                            <div class="about_yourself row">
+                                <h2>Tell us about yourself</h2>
+                                <p>Thanks for choosing TD Insurance!&nbsp;&nbsp;Inorder to safely set up your new accounts  and services, please tell us about yourself.</p>
+                            </div>
+                            <div class="personal_info row">
+                                <h2>Personal Information</h2>
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-3">
+                                            <input type="text" class="form-control" id="inputEmail4" placeholder="title">
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <input type="text" value="" class="form-control" placeholder="First Name" required/>
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <input type="text" value="" class="form-control" placeholder="Middle Name"/>
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <input type="text" value="" class="form-control" placeholder="Last Name" required/>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-4">
+                                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email Address" required>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <input type="text" class="form-control" id="inputEmail4" placeholder="Date ofBirth" required>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <input type="text" class="form-control" id="inputEmail4" placeholder="Social Insurance Number" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row float-right mt-5 btn_wrap">
+                                        <button type="button" class="btn btn-danger">Cancel</button>
+                                        <button type="button" class="btn btn-success ml-5">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="more_option_wrap col-sm-4 mt-5">
+                            <p>You are applying for:</p>
+                            <p>TD Travel Medical Insurance</p>
+                            <p><button type="button" class="btn btn-success">See more coverage options</button></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_wrap row pb-5 pt-5">
+            <div class="footer_inner mx-auto">
+                <h2 class="footer_heading pb-5">
+                    Need to talk to us directly?
+                    <a href="#" class="contact_link">Contact Us ></a>
+                </h2>
+                <div class="footer_links pb-4 pt-4">
+                    <ul>
+                        <li class="ml-3"><a href="#">Privacy and Security</a></li>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li class="mr-0"><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="social_wrap pb-4 pt-4">
+                    <ul class="social_list  mx-auto">
+                        <li>
+                            <a class="facebook_link" href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a class="twitter_link" href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a class="youtube_link" href="#"><i class="fab fa-youtube"></i></a>
+                        </li>	
+                        <li>
+                            <a class="rss_link" href="#"><i class="fas fa-rss"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

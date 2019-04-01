@@ -1,0 +1,239 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+#page_wrap{
+    margin: 0;
+    padding: 0;
+    background: #1b5337;
+    overflow: hidden;
+}
+
+.logo_title_container {
+    margin-top: 12px;
+}
+
+.insurance_links ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.insurance_links li{
+    float: left;
+    margin: 0 20px 0 0;
+}
+.insurance_links li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 21px 15px 10px;
+}
+.insurance_links li:hover {
+    border-bottom: 4px solid #00A221;
+}
+.main_content {
+    background: #f0f0f0;
+}
+.info_form_wrap{
+    margin: 75px 0 0;
+}
+.personal_info h2{
+    margin-bottom: 30px;
+}
+.form-group .form-control {
+    padding: 5px;
+    font-size: 17px;
+    color: #1c1c1c;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    border-right: 1px solid #ccc;
+    border-radius: 0;
+    border-bottom: 1px solid #ccc;
+    border-top: 0;
+    border-left: 1px solid #ccc;
+}
+.footer_wrap {
+    background: url(assets/images/seat.png) 0 center no-repeat;
+}
+.footer_heading {
+    font-size: 1.8em;
+    margin: 0 auto 0px;
+    line-height: 1;
+    color: #fff;
+    border-bottom: 1px solid #5BD453;
+}
+.contact_link {
+    color: #5BD453;
+    margin-left: 10px;
+}
+.footer_links{
+    border-bottom: 1px solid #5BD453;
+}
+.footer_links ul{
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;;
+}
+.footer_links ul li{
+    float: left;
+    margin-right: 32px;
+}
+.footer_links ul li a{
+    color: #fff;
+    line-height: 1;
+}
+.social_wrap .social_list{
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 320px;
+}
+.social_wrap .social_list li {
+    width: 55px;
+    height: 55px;
+    border-radius: 30px;
+    border: 2px solid #00A221;
+    float: left;
+    margin-right: 25px;
+}
+.social_wrap a i{    
+    color: #fff;
+    padding: 15px 16px;
+    font-size: 20px;
+}
+.fab.fa-facebook-f{
+    padding: 15px 20px;
+}
+.fab.fa-youtube {
+    padding: 15px 14px;
+}
+.fas.fa-rss {
+    padding: 15px 17px;
+}
+.province_list ul, .language_list ul {
+    list-style: none;
+    background: #fff;
+    padding: 10px;
+    position: absolute;
+    top: 64px;
+    z-index: 99;
+    box-shadow: 1px 1px 6px #ccc;
+    width: 200px;
+    left: -145px;
+}
+.province_sel, .language_sel{
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    padding: 20px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+}
+.province_list ul li, .language_list ul li {
+    padding: 10px;
+}
+.province_list ul li:hover, .language_list ul li:hover {
+    background: #f3f3f8;
+}
+.province_list_items, .language_list_items{
+    display: none;
+}
+.search_box{    padding: 20px 10px;
+    color: #fff;
+    text-align: center;
+}
+.login a{
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 0px;
+    display: block;
+}
+.container_wrap{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.logo_mobile{
+    display: none;
+}
+.logo_desktop{
+    display: block;
+}
+.navbar, .navbar-nav {
+    width: 100%;
+}
+@media screen and (max-width: 600px){
+    .container_wrap {
+        max-width: 360px;
+    }
+    .footer_wrap {
+        background: url(assets/images/seat.png) 0 bottom no-repeat;
+        padding-bottom: 160px !important;
+    }
+    .footer_wrap.row.pb-5.pt-5 {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    .footer_heading{
+        font-size: 1.25em;
+        text-align: center;
+        line-height: 29px;
+    }
+    .contact_link {
+        display: block;
+    }
+    .footer_links ul li {
+        margin: 0;
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .social_wrap .social_list li {
+        margin: 0 10px;
+    }
+    .btn_wrap{
+        margin-right: 0;
+    }
+    .btn_wrap .btn_success{
+        margin-left: 15px !important;
+    }
+    .logo_mobile{
+        float: left;
+        display: block;
+    }
+    .navbar-light .navbar-toggler-icon {
+        background: url(assets/images/menu.png) center center no-repeat;
+        background-size: contain;
+    }
+    .navbar-light .navbar-toggler {
+        border: 0;
+        outline: none;
+    }
+    .logo_desktop{
+        display: none;
+    }
+    .insurance_links li{
+        margin: 0;
+        display: block;
+        float: none;
+    }
+    .province_sel, .language_sel{
+        position: relative;
+    }
+    .search_box {
+        text-align: left;
+    }
+    .province_list ul, .language_list ul {
+        left: 0;
+    }
+}
